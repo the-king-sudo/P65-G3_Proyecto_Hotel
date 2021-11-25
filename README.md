@@ -1,6 +1,6 @@
 # Proyecto de gestion de hotel
 
-_El siguiente es un un miservicio _
+_El siguiente es un un miservicio para la gestion de usuarios y habitaciones de un hotel, realizado como proyecto del diplomado Mision TIC 2022._
 
 ## Comenzando 🚀
 
