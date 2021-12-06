@@ -33,8 +33,11 @@ pip3 install -r requirements.txt
 ```
 
 ## Ejecutando las pruebas ⚙️
+_En este apartado se dan las indicaciones de como realizar las pruebas del microservicio_
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+### Usuario
+
+_En el usuario _
 
 ### Analice las pruebas end-to-end 🔩
 

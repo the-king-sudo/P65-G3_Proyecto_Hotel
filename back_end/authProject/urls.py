@@ -20,12 +20,12 @@ from authApp                        import views
 
 urlpatterns = [
     path('admin/',                                  admin.site.urls),
-    path('login/', TokenObtainPairView.as_view()),
+    path('login/',                                  TokenObtainPairView.as_view()),
     path('refresh/',                                TokenRefreshView.as_view()),
     path('user/',                                   views.UserCreateView.as_view()),
     path('user/superuser/',                         views.UserCreateSuperView.as_view()),
     path('user/detail/',                            views.UserDetailView.as_view()),
-    path('user/verifyToken/',                            views.VerifyTokenView.as_view()),
+    path('user/verifyToken/',                       views.VerifyTokenView.as_view()),
     path('habitacion/create/',                      views.HabitacionCreateView.as_view()),
     path('habitacion/detail/<int:user>/<int:pk>/',  views.HabitacionDetailView.as_view()),
     path('habitacion/detail/<int:user>/',           views.HabitacionesView.as_view()),
