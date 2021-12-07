@@ -102,10 +102,10 @@ DATABASES = {
     # Se llena con las credenciales de heroku
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd9btg0kljmj77d', #database
-        'USER': 'wlrypiggrwpvwm',
-        'PASSWORD': '772d081a0a75e4d8469937ec0d115b77a869d89f94b3cc4ae53ed3d053a21a02',
-        'HOST': 'ec2-34-236-34-103.compute-1.amazonaws.com',
+        'NAME': 'dep144p1vpslbg', #database
+        'USER': 'yhbegdizqwjbqz',
+        'PASSWORD': '78915da3697d92bd7006f41f5df9f2eecfe328bfa90857c009d513b9e839eed0',
+        'HOST': 'ec2-54-159-176-167.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
