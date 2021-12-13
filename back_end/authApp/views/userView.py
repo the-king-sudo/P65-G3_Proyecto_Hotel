@@ -46,7 +46,7 @@ class UserCreateSuperView(views.APIView, BaseUserManager):
             return Response(tokenSerializer.validated_data, status=status.HTTP_201_CREATED)
         return Response("Ya hay un super usuario registrado", status=status.HTTP_401_UNAUTHORIZED)
 
-"""class UserDetailView(generics.ListAPIView):
+class UserDetailView(generics.ListAPIView):
     serializer_class    = UserSerializer
     permission_classes  = (IsAuthenticated,)
     def get_queryset(self):
@@ -57,10 +57,10 @@ class UserCreateSuperView(views.APIView, BaseUserManager):
         except:
             raise NotAuthenticated("Se requiere autentificacion")
         queryset = User.objects.filter(id = valid_data['user_id'])
-        return queryset"""
-class UserDetailView(generics.RetrieveAPIView):
+        return queryset
+"""class UserDetailView(generics.RetrieveAPIView):
     queryset = User.objects.all()
-    serializer_class = UserSerializer
+    serializer_class = UserSerializer"""
     """def get(self, request, *args, **kwargs):
 
         token           = request.META.get('HTTP_AUTHORIZATION')[7:]
