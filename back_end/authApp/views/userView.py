@@ -58,9 +58,7 @@ class UserDetailView(generics.ListAPIView):
             raise NotAuthenticated("Se requiere autentificacion")
         queryset = User.objects.filter(id = valid_data['user_id'])
         return queryset
-"""class UserDetailView(generics.RetrieveAPIView):
-    queryset = User.objects.all()
-    serializer_class = UserSerializer"""
+
     """def get(self, request, *args, **kwargs):
 
         token           = request.META.get('HTTP_AUTHORIZATION')[7:]
