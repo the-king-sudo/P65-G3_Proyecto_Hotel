@@ -24,7 +24,7 @@ urlpatterns = [
     path('refresh/',                                TokenRefreshView.as_view()),
     path('user/',                                   views.UserCreateView.as_view()),
     path('user/superuser/',                         views.UserCreateSuperView.as_view()),
-    path('user/detail/',                            views.UserDetailView.as_view()),
+    path('user/<int:pk>/',                          views.UserDetailView.as_view()),
     path('user/verifyToken/',                       views.VerifyTokenView.as_view()),
     path('habitacion/create/',                      views.HabitacionCreateView.as_view()),
     path('habitacion/detail/<int:user>/<int:pk>/',  views.HabitacionDetailView.as_view()),
