@@ -27,8 +27,8 @@ urlpatterns = [
     path('user/<int:pk>/',                          views.UserDetailView.as_view()),
     path('user/verifyToken/',                       views.VerifyTokenView.as_view()),
     path('habitacion/create/<int:user>/',           views.HabitacionCreateView.as_view()),
-    path('habitacion/detail/<int:user>/<int:pk>/',  views.HabitacionDetailView.as_view()),
-    path('habitacion/detail/<int:user>/',           views.HabitacionesView.as_view()),
+    path('habitacion/detail/<int:pk>/',             views.HabitacionDetailView.as_view()),
+    path('habitacion/detail/',                      views.HabitacionesView.as_view()),
     path('habitacion/remove/<int:user>/<int:pk>/',  views.HabitacionDelateView.as_view()),
     path('habitacion/update/<int:user>/<int:pk>/',  views.HabitacionUpdateView.as_view()),
     

@@ -88,14 +88,14 @@ _Conectar el Docker con heroku_
 heroku container:login
 ```
  
-_Crear imagen del microservicio, para esto necesitas tener una app creada dentro de heroku, representada con nombre_app_
+_Crear imagen del microservicio, para esto necesitas tener una app creada dentro de heroku, representada con gestion-hotel-be
 ```
-heroku container:push web --app nombre_app
+heroku container:push web --app gestion-hotel-be
 ```
 
 _Finalmente ya podemos realizar el despliegue con_
 ```
-heroku container:release web --app nombre-app
+heroku container:release web --app gestion-hotel-be
 ```
 
 ## Ejecucion de pruebas

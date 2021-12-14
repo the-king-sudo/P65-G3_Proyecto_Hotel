@@ -48,18 +48,6 @@ class UserCreateSuperView(views.APIView, BaseUserManager):
 class UserDetailView(generics.RetrieveAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-#class UserDetailView(generics.ListAPIView):
-    #serializer_class    = UserSerializer
-    #permission_classes  = (IsAuthenticated,)
-    #def get_queryset(self):
-    #    try:
-    #        token        = self.request.META.get('HTTP_AUTHORIZATION')[7:]
-    #        tokenBackend = TokenBackend(algorithm=settings.SIMPLE_JWT['ALGORITHM'])
-    #        valid_data   = tokenBackend.decode(token,verify=False)
-    #    except:
-    #        raise NotAuthenticated("Se requiere autentificacion")
-    #    queryset = User.objects.filter(id = valid_data['user_id'])
-    #    return queryset
 
     """def get(self, request, *args, **kwargs):
 
